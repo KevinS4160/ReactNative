@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Platform, Linking, Text } from 'react-native';
+import { Image, StyleSheet, Platform, Linking, Text, } from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
@@ -35,18 +35,24 @@ export default function HomeScreen() {
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Members:Lagao Miles Joshua D. </ThemedText>
+        <ThemedText type="subtitle">Lagao Miles Joshua D. </ThemedText>
         <ThemedText>
           I'm a 4th-Year student at the Technological Institute of the Philippines, and my track
-          elective is System Administrator. You can add me on Facebook:
-          <Text style={styles.link} onPress={() => Linking.openURL('https://www.facebook.com/profile.php?id=100001569941216')}></Text>
+          elective is System Administrator. </ThemedText>
+            <ThemedText>Here is my Link of my Facebook:
+            <Text style={styles.link} onPress={() => Linking.openURL('https://www.facebook.com/profile.php?id=100001569941216')}>
+          Miles Facebook Profile
+          </Text>
         </ThemedText>
-        <ThemedText type="subtitle">Members:Sumaya Kevin Roi A.</ThemedText>
+
+        <ThemedText type="subtitle">Sumaya Kevin Roi A.</ThemedText>
         <ThemedText>
           I'm a Computer Engineering student from Antipolo city, currently focused o exploring 
-          advanced technology and engineering concept. Here is my Link of my Facebook;
-          <Text style={styles.link} onPress={() => Linking.openURL('https://www.facebook.com/Kevinajero.Sumaya/')}>
-            </Text>
+          advanced technology and engineering concept.</ThemedText>
+          <ThemedText>Here is my Link of my Facebook: 
+            <Text style={styles.link} onPress={() => Linking.openURL('https://www.facebook.com/Kevinajero.Sumaya/')}>
+             Kevin's Facebook Profile"
+          </Text>
         </ThemedText>
       </ThemedView>
     </ParallaxScrollView>
